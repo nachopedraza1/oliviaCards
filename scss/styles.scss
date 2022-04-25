@@ -1,0 +1,16 @@
+@forward "../scss/header";
+@forward "../scss/main";
+@forward "../scss/footer";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "header"
+                          "sectionone"
+                          "sectiontwo"
+                          "sectiontree";
+  }

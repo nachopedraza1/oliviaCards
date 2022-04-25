@@ -1,0 +1,16 @@
+<svg id="system-requirements.svg" xmlns="http://www.w3.org/2000/svg" width="141.03" height="73.03" viewBox="0 0 141.03 73.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #76b900;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Monitor" class="cls-1" d="M4700.75,6294H4635.2a7.281,7.281,0,0,0-7.28,7.28v43.66a7.272,7.272,0,0,0,7.28,7.27h25.49v7.28h-7.28v7.28h29.13v-7.28h-7.28v-7.28h25.49a7.272,7.272,0,0,0,7.28-7.27v-43.66A7.281,7.281,0,0,0,4700.75,6294Zm0,50.94H4635.2v-43.66h65.55v43.66Z" transform="translate(-4567 -6294)"/>
+  <path id="Tower" class="cls-1" d="M4569,6294h40.01a2,2,0,0,1,2,2v69.03a2,2,0,0,1-2,2H4569a2,2,0,0,1-2-2V6296A2,2,0,0,1,4569,6294Z" transform="translate(-4567 -6294)"/>
+  <path class="cls-2" d="M4570,6300h38.01v8H4570v-8Z" transform="translate(-4567 -6294)"/>
+</svg>

@@ -1,0 +1,142 @@
+@use "../var/vars" as color;
+
+@font-face {
+    font-family: geforce;
+    src: url(../fuentes/geforce.ttf);
+}
+@font-face {
+    font-family: ddnpro;
+    src: url(../fuentes/ddnpro.otf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headerGrid{
+  background-color: black;
+  grid-area: header;
+  height: auto;
+  .icons{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 25px;
+    font-family: geforce;
+    .icons__rayo{
+      color: color.$colorVerde;
+    }
+  }
+  .main-menu{
+    display: none;
+  }
+  .icons__user{
+    display: none;
+  }
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  left: 100%;
+  transition: 0.3s;
+  height: 100%;
+  overflow:auto;
+  .menu__li{
+    list-style: none;
+    padding: 15px;
+    .menu__a{
+      text-decoration: none;
+      font-family: ddnpro;
+      font-size: 25px;
+      color: color.$colorVerde;
+    }
+  }
+}
+.nav-menu_visible{
+  left: 0;
+}
+
+@media screen and (min-width: 360px){
+  .main-menu{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px){
+  .main-menu{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 688px){
+  .headerGrid{
+    .icons{
+      .icons__user{
+        display: flex;
+        letter-spacing: 15px;
+      }
+      .icons__toggle{
+        display: none;
+      }
+    }
+      .main-menu{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        .main-menu__li{
+          list-style: none;
+          .main-menu__a{
+            text-decoration: none;
+            font-family: ddnpro;
+            font-size: 18px;
+            color: color.$colorVerde;
+            padding: 10px;
+          }
+          .main-menu__a:hover{
+            color:#4f7110 ;
+          }
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 769px){
+  .headerGrid{
+    .main-menu{
+      padding: 10px;
+      .main-menu__li{
+       .main-menu__a{
+         font-size: 20px;
+          padding: 10px;
+       }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .headerGrid{
+    .icons{
+      font-size: 30px;
+    }
+    .main-menu{
+      padding: 10px;
+      .main-menu__li{
+       .main-menu__a{
+         font-size: 25px;
+          padding: 15px;
+       }
+      }
+    }
+  }
+}
+
+
+
