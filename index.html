@@ -1,75 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Olivia News</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+  <title>ONews</title>
 </head>
+
 <body>
   <div class="grid">
-<header class="headerGrid">
-  <div class="icons">
-    <p class="icons__logo">OliviaCards <span class="icons__rayo"><i class="fa-solid fa-bolt-lightning"></i></span></p>
-    <p class="icons__toggle"><i class="fa-solid fa-bars"></i></p>
-    <div class="icons__user">
-      <p><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-user"></i></p>
-    </div>
+    <header class="headerGrid">
+      <div class="icons">
+        <p class="icons__logo">ONews <span class="icons__dragon"><i class="fa-solid fa-dragon"></i></span></p>
+        <p class="icons__toggle"><i class="fa-solid fa-bars"></i></p>
+        <div class="icons__user">
+          <p><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-user"></i></p>
+        </div>
+      </div>
+      <nav>
+        <!-- Menu Mobile-->
+        <ul class="menu">
+          <li class="menu__li"><a class="menu__a" href="index.html">INICIO</a></li>
+          <li class="menu__li"><a class="menu__a" href="pages/productos.html">PRODUCTOS</a></li>
+          <li class="menu__li"><a class="menu__a" href="pages/gamesytecno.html">TECNOLOGIAS</a></li>
+          <li class="menu__li"><a class="menu__a" href="pages/drivers.html">DRIVERS</a></li>
+          <li class="menu__li"><a class="menu__a" href="pages/contacto.html">CONTACTO</a></li>
+        </ul>
+        <!-- Menu -->
+        <ul class="main-menu">
+          <li class="main-menu__li"><a class="main-menu__a" href="index.html">INICIO</a></li>
+          <li class="main-menu__li"><a class="main-menu__a" href="pages/productos.html">PRODUCTOS</a></li>
+          <li class="main-menu__li"><a class="main-menu__a" href="pages/gamesytecno.html">TECNOLOGIAS</a></li>
+          <li class="main-menu__li"><a class="main-menu__a" href="pages/drivers.html">DRIVERS</a></li>
+          <li class="main-menu__li"><a class="main-menu__a" href="pages/contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sectionOne">
+      <div class="container-slider-movil">
+        <div class="slider" id="slider">
+          <div class="slider__section">
+            <img src="img/banner-320-3.jpg" alt="" class="slider__img">
+          </div>
+          <div class="slider__section">
+            <img src="img/banner-320-2.jpg" alt="" class="slider__img">
+          </div>
+          <div class="slider__section">
+            <img src="img/banner-320-1.jpg" alt="" class="slider__img">
+          </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">></div>
+        <div class="slider__btn slider__btn--left" id="btn-left">
+          << /div>
+        </div>
+    </section>
+    <section class="sectionTwo">
+      <div class="sliderPc">
+        <figure class="sliderPc__figure">
+          <img class="sliderPc__img" src="img/banner1.jpg" alt>
+          <img class="sliderPc__img" src="img/banner2.jpg" alt>
+          <img class="sliderPc__img" src="img/banner3.jpg" alt>
+          <img class="sliderPc__img" src="img/banner1.jpg" alt>
+          <img class="sliderPc__img" src="img/banner2.jpg" alt>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <h1 class="section-2__h1">Ultimos Anuncios <i class="fa-solid fa-arrow-down"></i></h1><br>
+      <h1 class="section-2__h1">GIGABYTE presenta las soluciones de juego de gama alta <span
+          class="section-2__span">AORUS.</span></h1>
+      <p class="section-2__p">AORUS presenta la Unidad de estado sólido PCIe Gen4 M.2 que utiliza un diseño de disipador
+        térmico de cobre de cuerpo completo y el primer SSD PCIe 4.0 NVMe del mundo con capacidad de 8 TB capaz de
+        ofrecer velocidades de lectura secuencial de más de 15,000 MB/s.</p><br>
+      <img class="section-2__img-mobile" src="img/aourus home.jpg" alt="">
+    </section>
+
+    <section class="section-3">
+      <h1 class="section-3__h1">GEFORCE® EXPERIENCE™</h1>
+      <p class="section-3__p">Crea y comparte videos, capturas de pantalla y transmisiones en vivo con amigos. Asegúrate
+        de que los drivers estén actualizados y optimiza la configuración de los juegos. GeForce Experience™ te permite
+        hacer todo esto, por lo que es el complemento indispensable para tu laptop o tarjeta gráfica GeForce®.</p>
+      <button class="section-3__btn"><a class="section-3__a" href="#">DESCARGAR AHORA</a></button>
+    </section>
+
+    <section class="section-4">
+      <h1 class="section-4__h1">COMPARTE TUS MEJORES MOMENTOS</h1>
+      <p class="section-4__p">Ahora puedes grabar y compartir tus videos de juego y transmisiones en vivo en YouTube,
+        Twitch y Facebook. La tecnología ShadowPlay™ de NVIDIA te permite transmitir con un rendimiento mínimo para que
+        nunca pierdas el ritmo en tus juegos. La superposición en el juego GeForce Experience lo hace más rápido y más
+        fácil.</p><br>
+      <p class="section-4__p"><span class="section-4__span">> </span>Transmite a Facebook Live</p>
+      <p class="section-4__p"><span class="section-4__span">> </span>Graba automáticamente con NVIDIA Highlights</p>
+      <img class="section-4__img-mobile" src="img/home3.jpg" alt="">
+    </section>
+
+    <section class="section-5">
+      <h1 class="section-5__h1">CON LOS FILTROS DE JUEGO DE FREESTYLE:</h1>
+      <video src="https://images.nvidia.com/aem-dam/Solutions/geforce/Freestyle/576050_CES2018_GFE_FS_625_WEB_VP8.webm"
+        preload="auto" width="100%" loop muted autoplay></video>
+      <p class="section-5__p">Los filtros de NVIDIA Freestyle te permiten añadir filtros de post-procesamiento en tus
+        juegos mientras juegas. Cambia la apariencia de tu juego con algunas variaciones de color o saturación, o aplica
+        filtros de post-procesamiento de estilos como el HDR.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__row-1">
+        <img class="footer__img" src="img/amd.png" alt="">
+        <img class="footer__img" src="img/aorusblanco.png" alt="">
+        <img class="footer__img" src="img/asus.png" alt="">
+        <img class="footer__img" src="img/hyperx.png" alt="">
+        <img class="footer__img" src="img/logitech.png" alt="">
+        <img class="footer__img" src="img/corsair.png" alt="">
+        <img class="footer__img" src="img/msi.png" alt="">
+      </div>
+      <div class="footer__row-2">
+        <p class="footer__logo">ONews <span class="icons__dragon"><i class="fa-solid fa-dragon"></i></span></p>
+        <span data-v-1c95e756="" data-text="TEAM UP. FIGHT ON." class="footer-text-glitch glitch footer-glitch"> TEAM UP. FIGHT ON. </span>
+        <div class="footer__social">
+          <a class="footer__icon" href=""><i class="fa-brands fa-twitter"></i></a>
+          <a class="footer__icon" href=""><i class="fa-brands fa-instagram"></i></a>
+          <a class="footer__icon" href=""><i class="fa-brands fa-youtube"></i></a>
+          <a class="footer__icon" href=""><i class="fa-brands fa-twitch"></i></a>
+        </div>
+      </div>
+    </footer>
   </div>
-  <nav>
-    <!-- Menu Mobile-->
-    <ul class="menu">
-      <li class="menu__li"><a class="menu__a" href="index.html">INICIO</a></li>
-      <li class="menu__li"><a class="menu__a" href="pages/productos.html">PRODUCTOS</a></li>
-      <li class="menu__li"><a class="menu__a" href="pages/gamesytecno.html">TECNOLOGIAS</a></li>
-      <li class="menu__li"><a class="menu__a" href="pages/drivers.html">DRIVERS</a></li>
-     <li class="menu__li"><a class="menu__a" href="pages/contacto.html">CONTACTO</a></li>
-    </ul>
-    <!-- Menu -->
-    <ul class="main-menu">
-      <li class="main-menu__li"><a class="main-menu__a" href="index.html">INICIO</a></li>
-      <li class="main-menu__li"><a class="main-menu__a" href="pages/productos.html">PRODUCTOS</a></li>
-      <li class="main-menu__li"><a class="main-menu__a" href="pages/gamesytecno.html">TECNOLOGIAS</a></li>
-      <li class="main-menu__li"><a class="main-menu__a" href="pages/drivers.html">DRIVERS</a></li>
-     <li class="main-menu__li"><a class="main-menu__a" href="pages/contacto.html">CONTACTO</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="sectionOne">
-  <div class="container-slider-movil">
-    <div class="slider" id="slider">
-      <div class="slider__section">
-        <img src="img/banner-320-3.jpg" alt="" class="slider__img">
-      </div>
-      <div class="slider__section">
-        <img src="img/banner-320-2.jpg" alt="" class="slider__img">
-      </div>
-      <div class="slider__section">
-        <img src="img/banner-320-1.jpg" alt="" class="slider__img">
-      </div>
-    </div>
-    <div class="slider__btn slider__btn--right" id="btn-right">></div>
-    <div class="slider__btn slider__btn--left" id="btn-left"><</div>
-  </div>
-</section>
-<section class="sectionTwo">
-  <div class="sliderPc">
-    <figure class="sliderPc__figure"> 
-        <img class="sliderPc__img" src="img/banner1.jpg" alt>
-        <img class="sliderPc__img" src="img/banner2.jpg" alt>
-        <img class="sliderPc__img" src="img/banner3.jpg" alt>
-        <img class="sliderPc__img" src="img/banner1.jpg" alt>
-        <img class="sliderPc__img" src="img/banner2.jpg" alt>
-     </figure>
-</div>
-</section>
-<section class="sectionTree">
-  <p>lorem100002</p>
-  <p>Lorem olor sit amet consectetur adipisicing elit. Ab pariatur magnam dolores iure. Ducimus, corrupti consequatur adipisci laboriosam, error cupiditate aliquam est cumque vero ex eligendi repellat eius iste excepturi.</p>
-</section>
-</div>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

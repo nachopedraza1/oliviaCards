@@ -2,15 +2,20 @@
 @forward "../scss/main";
 @forward "../scss/footer";
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.grid{
+.grid {
     display: grid;
-    grid-template-areas: "header"
-                          "sectionone"
-                          "sectiontwo"
-                          "sectiontree";
-  }
+    grid-template-areas: 
+        "header"
+        "sectionone"
+        "sectiontwo"
+        "section-2"
+        "sectiontree"
+        "sectionfour"
+        "sectionfive"
+        "footer";
+}

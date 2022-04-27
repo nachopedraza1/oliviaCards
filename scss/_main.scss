@@ -1,123 +1,262 @@
-       .sectionOne{
-        grid-area: sectionone;
+@use "../var/vars"as color;
+
+.sectionOne {
+    margin-top: 53px;
+    grid-area: sectionone;
+    width: 100%;
+
+    .container-slider-movil {
         width: 100%;
-        .container-slider-movil{
-            width: 100%;
-            max-width: 900px;
-            margin: auto;
-            overflow: hidden;
-            .slider{
-                display: flex;
-                width: 300%;
+        max-width: 900px;
+        margin: auto;
+        overflow: hidden;
+
+        .slider {
+            display: flex;
+            width: 300%;
+            height: auto;
+            margin-left: -100%;
+
+            .slider__section {
+                width: 100%;
                 height: auto;
-                margin-left: -100%;
-                .slider__section{
+
+                .slider__img {
+                    display: block;
                     width: 100%;
                     height: auto;
-                    .slider__img{
+                }
+            }
+        }
+
+        .slider__btn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: monospace;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .slider__btn--left {
+            left: 10px;
+            display: none;
+        }
+
+        .slider__btn--right {
+            right: 10px;
+            display: none;
+        }
+    }
+}
+
+.sectionTwo {
+    grid-area: sectiontwo;
+    height: auto;
+
+    .sliderPc {
+        overflow: hidden;
+
+        .sliderPc__figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 30s slidy infinite;
+
+            .sliderPc__img {
+                width: 20%;
+                float: left;
+            }
+            @keyframes slidy {
+                0% { left: 0%; }
+                20% { left: 0%; }
+                25% { left: -100%; }
+                45% { left: -100%; }
+                50% { left: -200%; }
+                70% { left: -200%; }
+                75% { left: -300%; }
+                95% { left: -300%; }
+                100% { left: -400%; }
+                }
+        }
+
+    }
+}
+
+.section-2 {
+    grid-area: section-2;
+    background-color: black;
+    height: auto;
+
+    .section-2__img-mobile {
+        width: 100%;
+    }
+
+    .section-2__h1 {
+        font-family: 'Aldrich', sans-serif;
+        font-style: normal;
+        font-size: 25px;
+        color: #fff;
+        text-align: start;
+        padding: 10px;
+        font-weight: normal;
+
+        .section-2__span {
+            color: #FF6400;
+        }
+    }
+
+    .section-2__p {
+        color: white;
+        font-family: ddnpro;
+        text-align: left;
+        margin: 0px 15px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+}
+
+.section-3 {
+    grid-area: sectiontree;
+    background-image: url("../img//gfe-home-0768x440-p@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+    .section-3__h1 {
+        font-family: geforce;
+        color: color.$colorVerde;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .section-3__p {
+        color: white;
+        font-family: ddnpro;
+        text-align: left;
+        margin: 0px 15px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+
+    .section-3__btn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: color.$colorVerde;
+        margin: auto;
+        margin-top: 10px;
+        display: block;
+
+        .section-3__a {
+            text-decoration: none;
+            font-family: ddnpro;
+            font-size: 15px;
+            font-weight: bolder;
+            color: black;
+        }
+    }
+}
+
+.section-4 {
+    grid-area: sectionfour;
+    background-color: black;
+    height: auto;
+
+    .section-4__img-mobile {
+        width: 100%;
+    }
+
+    .section-4__h1 {
+        font-family: geforce;
+        font-size: 25px;
+        color: color.$colorVerde;
+        text-align: start;
+        padding: 10px;
+    }
+
+    .section-4__p {
+        color: white;
+        font-family: ddnpro;
+        text-align: left;
+        margin: 0px 15px;
+        font-weight: normal;
+        line-height: 20px;
+
+        .section-4__span {
+            color: color.$colorVerde;
+        }
+    }
+}
+
+.section-5 {
+    grid-area: sectionfive;
+    background-color: black;
+    height: auto;
+
+    .section-5__img-mobile {
+        width: 100%;
+    }
+
+    .section-5__h1 {
+        font-family: ddnpro;
+        font-size: 25px;
+        color: #fff;
+        text-align: start;
+        padding: 10px;
+        font-weight: 100;
+    }
+
+    .section-5__p {
+        color: white;
+        font-family: ddnpro;
+        text-align: left;
+        margin: 0px 15px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 360px) {}
+
+@media screen and (min-width: 480px) {
+    .sectionOne {
+        .container-slider-movil {
+            .slider {
+                .slider__section {
+                    .slider__img {
                         display: block;
                         width: 100%;
-                        height: auto;
+                        height: 300px;
                     }
                 }
             }
-            .slider__btn{
-                position: absolute;
-                width: 40px;
-                height: 40px;
-                top: 50%;
-                font-size: 30px;
-                font-weight: bold;
-                font-family: monospace;
-                border-radius: 50%;
-                cursor: pointer;
-                text-align: center;
-                background-color: aqua;
-            }
-            
-            .slider__btn--left{
-                left: 10px;
-                display: none;
-            }
-            
-            .slider__btn--right{
-                right: 10px;
-                display: none;
-            }
         }
     }
-    
-      .sectionTwo{
-        grid-area: sectiontwo;
-        height: auto;
-            .sliderPc { 
-                overflow: hidden; 
-                .sliderPc__figure { 
-                    position:relative;
-                    width: 500%;
-                    margin: 0;
-                    left: 0;
-                    text-align: left;
-                    font-size: 0;
-                    animation: 30s slidy infinite; 
-                    .sliderPc__img { 
-                        width: 20%; float: left; 
-                    }
-                  }
-                  @keyframes slidy {
-                    0% { left: 0%; }
-                    20% { left: 0%; }
-                    25% { left: -100%; }
-                    45% { left: -100%; }
-                    50% { left: -200%; }
-                    70% { left: -200%; }
-                    75% { left: -300%; }
-                    95% { left: -300%; }
-                    100% { left: -400%; }
-                    }
-            }
-      }
-      
-      .sectionTree{
-        grid-area: sectiontree;
-        height: 20px;
-        background-color: rgb(34, 209, 209);
-      }
+}
 
-    @media screen and (min-width: 360px){
- 
+@media screen and (min-width: 688px) {
+    .sectionOne {
+        display: none;
     }
+}
 
-    @media screen and (min-width: 480px){
-        .sectionOne{
-            .container-slider-movil{
-                .slider{
-                    .slider__section{
-                        .slider__img{
-                            display: block;
-                            width: 100%;
-                            height: 300px;
-                        } 
-                    } 
-                } 
-            } 
-        } 
+@media screen and (min-width: 769px) {
+    .sectionOne {
+        display: none;
     }
-    
-    @media screen and (min-width: 688px){
-        .sectionOne{
-            display: none;
-       }
-    }
+}
 
-    @media screen and (min-width: 769px){
-        .sectionOne{
-            display: none;
-       }
+@media screen and (max-width: 688px) {
+    .sectionTwo {
+        display: none;
     }
-    @media screen and (max-width: 688px) {
-        .sectionTwo{
-            display: none;
-       }
-    }
-   
+}
