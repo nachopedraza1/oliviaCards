@@ -1,11 +1,11 @@
-@use "../var/vars"as color;
+@use "../var/vars"as c;
 
 .footer {
     grid-area: footer;
     height: auto;
     width: 100%;
-    background-color: #1f1f1f;
-    border-top: 1px solid red;
+    background-color: #131313;
+    border-top: 1px solid c.$colorNaranja;
 
     .footer__row-1 {
         display: none;
@@ -18,10 +18,10 @@
             padding: 10px;
             font-family: geforce;
             font-size: 30px;
-            color: #fff;
+            color: c.$colorBlanco;
 
             .icons__dragon {
-                color: color.$colorVerde;
+                color: c.$colorNaranja;
             }
         }
 
@@ -31,11 +31,29 @@
             padding: 10px;
 
             .footer__icon {
-                color: #fff;
+                color: c.$colorBlanco;
                 letter-spacing: 15px;
                 font-size: 25px;
             }
         }
+    }
+    .footer__up{
+        display: flex;
+        justify-content: end;
+        .footer__up-btn{
+            background-color: c.$colorNaranja;;
+            border: 1px solid beige;
+            border-radius: 50%;
+            padding: 5px;
+            margin: 0px 10px 10px 0px;
+             .up__a{
+                 text-decoration: none;
+                 color: c.$colorBlanco;
+                 font-size: 20px;
+                 padding: 5px;
+             }
+         }
+
     }
 }
 
@@ -167,5 +185,25 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #fff;
+    color: c.$colorBlanco;
+}
+
+@media screen and (min-width: 360px) {
+
+}
+  
+@media screen and (min-width: 480px) {
+
+}
+  
+@media screen and (min-width: 688px) {
+
+}
+  
+@media screen and (min-width: 769px) {
+
+}
+  
+@media screen and (min-width: 992px) {
+
 }

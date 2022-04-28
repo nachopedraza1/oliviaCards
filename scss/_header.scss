@@ -1,15 +1,4 @@
-@use "../var/vars"as color;
-
-@font-face {
-  font-family: geforce;
-  src: url(../fuentes/geforce.ttf);
-}
-
-@font-face {
-  font-family: ddnpro;
-  src: url(../fuentes/ddnpro.otf);
-}
-
+@use "../var/vars"as c;
 
 * {
   margin: 0;
@@ -17,14 +6,14 @@
 }
 
 .headerGrid {
-  background-color: black;
+  background-color: c.$backgraund;
   grid-area: header;
   height: auto;
   position: fixed;
   width: 100%;
 
   .icons {
-    color: white;
+    color: c.$colorBlanco;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -32,15 +21,11 @@
     font-family: geforce;
 
     .icons__dragon {
-      color: rgb(154, 22, 22);
+      color: c.$colorNaranja;
     }
   }
 
   .main-menu {
-    display: none;
-  }
-
-  .icons__user {
     display: none;
   }
 }
@@ -49,13 +34,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background-color: c.$backgraund;
   position: fixed;
   width: 100%;
   left: 100%;
   transition: 0.3s;
   height: 100%;
   overflow: auto;
+  border-top: 1px solid c.$colorNaranja;
+
 
   .menu__li {
     list-style: none;
@@ -63,9 +50,9 @@
 
     .menu__a {
       text-decoration: none;
-      font-family: ddnpro;
+      font-family: 'Aldrich', sans-serif;
       font-size: 25px;
-      color: #fff;
+      color: c.$colorBlanco;
     }
   }
 }
@@ -91,10 +78,6 @@
     position: relative;
 
     .icons {
-      .icons__user {
-        display: flex;
-        letter-spacing: 15px;
-      }
 
       .icons__toggle {
         display: none;
@@ -104,21 +87,20 @@
     .main-menu {
       display: flex;
       justify-content: center;
-      padding: 5px;
 
       .main-menu__li {
         list-style: none;
 
         .main-menu__a {
           text-decoration: none;
-          font-family: ddnpro;
-          font-size: 18px;
-          color: color.$colorVerde;
+          font-family: Aldrich, sans-serif;
+          font-size: 16px;
+          color: c.$colorBlanco;
           padding: 10px;
         }
 
         .main-menu__a:hover {
-          color: #4f7110;
+          color: c.$colorRojo;
         }
       }
     }
@@ -128,12 +110,10 @@
 @media screen and (min-width: 769px) {
   .headerGrid {
     .main-menu {
-      padding: 10px;
-
       .main-menu__li {
         .main-menu__a {
-          font-size: 20px;
-          padding: 10px;
+          font-size: 18px;
+
         }
       }
     }
@@ -147,12 +127,9 @@
     }
 
     .main-menu {
-      padding: 10px;
-
       .main-menu__li {
         .main-menu__a {
-          font-size: 25px;
-          padding: 15px;
+          font-size: 22px;
         }
       }
     }
