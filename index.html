@@ -16,10 +16,10 @@
 </head>
 
 <body>
-  <div class="grid">
-    <header class="headerGrid">
+  <div class="grids-inicio">
+    <header class="header grid-header-inicio">
       <div class="icons">
-        <p class="icons__logo">ONews <span class="icons__dragon"><i class="fa-solid fa-dragon"></i></span></p>
+        <p class="icons__logo">ONews <i class="c-naranja fa-solid fa-dragon"></i></p>
         <p class="icons__toggle"><i class="fa-solid fa-bars"></i></p>
         <!-- Menu -->
         <ul class="main-menu">
@@ -41,110 +41,120 @@
         </ul>
       </nav>
     </header>
-    <section class="slider-mobile">
+    <!-- Slider Mobile-->
+    <section class="slider-mobile grid-slider-mobile">
       <div class="container-slider-movil">
         <div class="slider" id="slider">
           <div class="slider__section">
-            <img src="img/banner-320-3.jpg" alt="" class="slider__img">
+            <img src="img/sliders/banner-320-3.jpg" alt="" class="slider__img">
           </div>
           <div class="slider__section">
-            <img src="img/banner-320-2.jpg" alt="" class="slider__img">
+            <img src="img/sliders/banner-320-2.jpg" alt="" class="slider__img">
           </div>
           <div class="slider__section">
-            <img src="img/banner-320-1.jpg" alt="" class="slider__img">
+            <img src="img/sliders/banner-320-1.jpg" alt="" class="slider__img">
           </div>
         </div>
         <div class="slider__btn slider__btn--right" id="btn-right">></div>
-        <div class="slider__btn slider__btn--left" id="btn-left">
-          << /div>
+        <div class="slider__btn slider__btn--left" id="btn-left"><< /div>
         </div>
     </section>
-    <section class="slider-desk">
+    <!-- Slider -->
+    <section class="slider-desk grid-slider-desk">
       <div class="sliderPc">
         <figure class="sliderPc__figure">
-          <img class="sliderPc__img" src="img/banner1.jpg" alt>
-          <img class="sliderPc__img" src="img/banner2.jpg" alt>
-          <img class="sliderPc__img" src="img/banner3.jpg" alt>
-          <img class="sliderPc__img" src="img/banner1.jpg" alt>
-          <img class="sliderPc__img" src="img/banner2.jpg" alt>
+          <img class="sliderPc__img" src="img/sliders/banner1.jpg" alt>
+          <img class="sliderPc__img" src="img/sliders/banner2.jpg" alt>
+          <img class="sliderPc__img" src="img/sliders/banner3.jpg" alt>
+          <img class="sliderPc__img" src="img/sliders/banner1.jpg" alt>
+          <img class="sliderPc__img" src="img/sliders/banner2.jpg" alt>
         </figure>
       </div>
     </section>
 
-    <section class="section-2">
-      <div class="section-2__col-1">
-        <h1 class="section-2__h1">Ultimos Anuncios <i class="fa-solid fa-arrow-down"></i></h1>
-        <h2 class="section-2__h2">GIGABYTE Presenta: Gama alta
-          AORUS.</h2>
-        <p class="section-2__p">AORUS presenta la Unidad de estado sólido PCIe Gen4 M.2 que utiliza un diseño de
-          disipador
-          térmico de cobre de cuerpo completo y el primer SSD PCIe 4.0 NVMe del mundo con capacidad de 8 TB capaz de
-          ofrecer velocidades de lectura secuencial de más de 15,000 MB/s.</p>
-        <button class="section-2__btn"><a class="section-2__a" href="#">MAS INFORMACION</a></button>
-      </div>
-      <div class="section-2__col-2">
-        <img class="section-2__img" src="img/aourus home.jpg" alt="">
-      </div>
-    </section>
+    <div class="grid-content-inicio">
+      <!-- Section-2-->
+      <section class="container container--inicio-section-2">
+        <div class="container--inicio-section-2__col-1">
+          <h1 class="tittle-h2 c-blanco">Ultimos Anuncios <i class="fa-solid fa-arrow-down"></i></h1>
+          <h2 class="tittle-h2">GIGABYTE Presenta: Gama alta
+            AORUS.</h2>
+          <p class="text-p">AORUS presenta la Unidad de estado sólido PCIe Gen4 M.2 que utiliza un diseño de
+            disipador
+            térmico de cobre de cuerpo completo y el primer SSD PCIe 4.0 NVMe del mundo con capacidad de 8 TB capaz de
+            ofrecer velocidades de lectura secuencial de más de 15,000 MB/s.</p>
+          <button class="btn"><a class="btn__a" href="#">MAS INFORMACION</a></button>
+        </div>
+        <div class="container--inicio-section-2__col-2">
+          <img class="wh-100" src="img/inicio/aourus home.jpg" alt="">
+        </div>
+      </section>
+      <!-- Section-3-->
+      <section class="container container--inicio-section-3">
+        <div class="container--inicio-section-3__col-1">
+          <h1 class="tittle-h1">GEFORCE® EXPERIENCE™</h1>
+          <p class="text-p">Crea y comparte videos, capturas de pantalla y transmisiones en vivo con amigos.
+            Asegúrate
+            de que los drivers estén actualizados y optimiza la configuración de los juegos. GeForce Experience™ te
+            permite
+            hacer todo esto, por lo que es el complemento indispensable para tu laptop o tarjeta gráfica GeForce®.</p>
+          <button class="btn"><a class="btn__a" href="#">DESCARGAR AHORA</a></button>
+        </div>
+        <div class="container--inicio-section-3__col-2">
+          <img class="wh-100" src="img/inicio/2.jpg" alt="">
+        </div>
+      </section>
+      <!-- Section-4-->
+      <section class="container container--inicio-section-4">
+        <div class="container--inicio-section-4__col-1">
+          <h1 class="tittle-h1">COMPARTE TUS MEJORES MOMENTOS</h1>
+          <p class="text-p">Ahora puedes grabar y compartir tus videos de juego y transmisiones en vivo en YouTube,
+            Twitch y Facebook. La tecnología ShadowPlay™ de NVIDIA te permite transmitir con un rendimiento mínimo para
+            que
+            nunca pierdas el ritmo en tus juegos. La superposición en el juego GeForce Experience lo hace más rápido y
+            más
+            fácil.</p>
+          <p class="text-p"><span class="span-color">> </span>Transmite a Facebook Live</p>
+          <p class="text-p"><span class="span-color">> </span>Graba automáticamente con NVIDIA Highlights</p>
+        </div>
+        <div class="container--inicio-section-4__col-2">
+          <img class="wh-100" src="img/inicio/home3.jpg" alt="">
+        </div>
+      </section>
+      <!-- Section-5-->
+      <section class="container container--inicio-section-5">
+        <div class="container--inicio-section-5__col-1">
+          <h1 class="tittle-h1 c-blanco">CON LOS FILTROS DE JUEGO DE FREESTYLE:</h1>
+        </div>
+        <div class="container--inicio-section-5__col-2">
+          <video class="pad-15"
+            src="https://images.nvidia.com/aem-dam/Solutions/geforce/Freestyle/576050_CES2018_GFE_FS_625_WEB_VP8.webm"
+            preload="auto" width="100%" loop muted autoplay></video>
+        </div>
+        <div class="container--inicio-section-5__col-3">
+          <p class="text-p">Los filtros de NVIDIA Freestyle te permiten añadir filtros de post-procesamiento en tus
+            juegos mientras juegas. Cambia la apariencia de tu juego con algunas variaciones de color o saturación, o
+            aplica
+            filtros de post-procesamiento de estilos como el HDR.</p>
+          <button class="btn"><a class="btn__a" href="#">MAS INFORMACION</a></button>
+        </div>
+      </section>
+    </div>
 
-    <section class="section-3">
-      <div class="section-3__col-1">
-        <img class="section-3__col-1-img" src="img/2.jpg" alt="">
-      </div>
-      <div class="section-3__col-2">
-        <h1 class="section-3__h1">GEFORCE® EXPERIENCE™</h1>
-        <p class="section-3__p">Crea y comparte videos, capturas de pantalla y transmisiones en vivo con amigos.
-          Asegúrate
-          de que los drivers estén actualizados y optimiza la configuración de los juegos. GeForce Experience™ te
-          permite
-          hacer todo esto, por lo que es el complemento indispensable para tu laptop o tarjeta gráfica GeForce®.</p>
-        <button class="section-3__btn"><a class="section-3__a" href="#">DESCARGAR AHORA</a></button>
-      </div>
-    </section>
+    <footer class="footer grid-footer-inicio">
+      <ul class="footer__row-1">
+        <li class="footer__li"><img class="footer__img" src="img/footer/amd.png" alt=""></li>
+        <li class="footer__li"><img class="footer__img" src="img/footer/asus.png" alt=""></li>
+        <li class="footer__li"><img class="footer__img" src="img/footer/hyperx.png" alt=""></li>
+        <li class="footer__li"><img class="footer__img" src="img/footer/logitech.png" alt=""></li>
+        <li class="footer__li"><img class="footer__img" src="img/footer/corsair.png" alt=""></li>
+        <li class="footer__li"><img class="footer__img" src="img/footer/msi.png" alt=""></li>
+        <li class="footer__li"><img class="footer__img" src="img/footer/nvidia.png" alt=""></li>
+        <li class="footer__li"><img class="footer__img" src="img/footer/logo.acad5b52.png.webp" alt=""></li>
+      </ul>
 
-    <section class="section-4">
-      <div class="section-4__col-1">
-        <h1 class="section-4__h1">COMPARTE TUS MEJORES MOMENTOS</h1>
-      <p class="section-4__p">Ahora puedes grabar y compartir tus videos de juego y transmisiones en vivo en YouTube,
-        Twitch y Facebook. La tecnología ShadowPlay™ de NVIDIA te permite transmitir con un rendimiento mínimo para que
-        nunca pierdas el ritmo en tus juegos. La superposición en el juego GeForce Experience lo hace más rápido y más
-        fácil.</p>
-      <p class="section-4__p"><span class="section-4__span">> </span>Transmite a Facebook Live</p>
-      <p class="section-4__p"><span class="section-4__span">> </span>Graba automáticamente con NVIDIA Highlights</p>
-      </div>
-      <div class="section-4__col-2">
-        <img class="section-4__img-mobile" src="img/home3.jpg" alt="">
-      </div>
-    </section>
-
-    <section class="section-5">
-      <div class="section-5__col-1">
-        <h1 class="section-5__h1">CON LOS FILTROS DE JUEGO DE FREESTYLE:</h1>
-      </div>
-      <div class="section-5__col-2">
-        <video src="https://images.nvidia.com/aem-dam/Solutions/geforce/Freestyle/576050_CES2018_GFE_FS_625_WEB_VP8.webm"
-        preload="auto" width="100%" loop muted autoplay></video>
-      </div>
-      <div class="section-5__col-3">
-        <p class="section-5__p">Los filtros de NVIDIA Freestyle te permiten añadir filtros de post-procesamiento en tus
-          juegos mientras juegas. Cambia la apariencia de tu juego con algunas variaciones de color o saturación, o aplica
-          filtros de post-procesamiento de estilos como el HDR.</p>
-          <button class="section-5__btn"><a class="section-5__a" href="#">MAS INFORMACION</a></button>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer__row-1">
-        <img class="footer__img" src="img/amd.png" alt="">
-        <img class="footer__img" src="img/aorusblanco.png" alt="">
-        <img class="footer__img" src="img/asus.png" alt="">
-        <img class="footer__img" src="img/hyperx.png" alt="">
-        <img class="footer__img" src="img/logitech.png" alt="">
-        <img class="footer__img" src="img/corsair.png" alt="">
-        <img class="footer__img" src="img/msi.png" alt="">
-      </div>
       <div class="footer__row-2">
-        <p class="footer__logo">ONews <span class="icons__dragon"><i class="fa-solid fa-dragon"></i></span></p>
+        <p class="footer__logo">ONews <i class="c-naranja fa-solid fa-dragon"></i></p>
         <span data-v-1c95e756="" data-text="TEAM UP. FIGHT ON." class="footer-text-glitch glitch footer-glitch"> TEAM
           UP. FIGHT ON. </span>
         <div class="footer__social">

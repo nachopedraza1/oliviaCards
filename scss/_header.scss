@@ -5,9 +5,8 @@
   box-sizing: border-box;
 }
 
-.headerGrid {
+.header{
   background-color: c.$backgraund;
-  grid-area: header;
   height: auto;
   position: fixed;
   width: 100%;
@@ -17,17 +16,16 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    font-size: 25px;
+    font-size: 1.6em;
     font-family: geforce;
-
-    .icons__dragon {
-      color: c.$colorNaranja;
-    }
   }
 
   .main-menu {
     display: none;
   }
+}
+.header{
+  
 }
 
 .menu {
@@ -43,15 +41,14 @@
   overflow: auto;
   border-top: 1px solid c.$colorNaranja;
 
-
   .menu__li {
     list-style: none;
     padding: 15px;
 
     .menu__a {
       text-decoration: none;
-      font-family: 'Aldrich', sans-serif;
-      font-size: 25px;
+      font-family: 'Titillium Web';
+      font-size: 1.6em;
       color: c.$colorBlanco;
     }
   }
@@ -61,24 +58,15 @@
   left: 0;
 }
 
-@media screen and (min-width: 360px) {
-  .main-menu {
-    display: none;
-  }
-}
+@media screen and (min-width: 360px) {}
 
-@media screen and (min-width: 480px) {
-  .main-menu {
-    display: none;
-  }
-}
+@media screen and (min-width: 480px) {}
 
 @media screen and (min-width: 688px) {
-  .headerGrid {
+  .header{
     position: relative;
 
     .icons {
-
       .icons__toggle {
         display: none;
       }
@@ -93,14 +81,19 @@
 
         .main-menu__a {
           text-decoration: none;
-          font-family: Aldrich, sans-serif;
-          font-size: 16px;
+          font-family: 'Titillium Web';
+          font-size: 0.7em;
           color: c.$colorBlanco;
-          padding: 10px;
+          margin: 10px;
+          background-image: linear-gradient(black, c.$colorNaranja);
+          background-position: 0% 100%;
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          transition: background-size .3s;
         }
 
         .main-menu__a:hover {
-          color: c.$colorNaranja;
+          background-size: 100% 2px;
         }
       }
     }
@@ -108,11 +101,11 @@
 }
 
 @media screen and (min-width: 769px) {
-  .headerGrid {
+  .header{
     .main-menu {
       .main-menu__li {
         .main-menu__a {
-          font-size: 18px;
+         
 
         }
       }
@@ -121,17 +114,5 @@
 }
 
 @media screen and (min-width: 992px) {
-  .headerGrid {
-    .icons {
-      font-size: 30px;
-    }
 
-    .main-menu {
-      .main-menu__li {
-        .main-menu__a {
-          font-size: 22px;
-        }
-      }
-    }
-  }
 }

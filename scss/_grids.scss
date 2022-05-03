@@ -1,0 +1,38 @@
+@use "../var/vars"as c;
+
+/* Grids, Flexs*/
+
+/* Inicio Grids*/
+.grids-inicio{
+    display: grid;
+    background-color: c.$backgraund;
+    grid-template-areas:
+        "grid-header-inicio"
+        "grid-slider-mobile"
+        "grid-slider-desk"
+        "grid-content-inicio"
+        "footer-inicio";
+}
+.grid-header-inicio{grid-area: grid-header-inicio;}
+.grid-slider-mobile{grid-area: grid-slider-mobile;}
+.grid-slider-desk{grid-area: grid-slider-desk;}
+.grid-content-inicio{grid-area:grid-content-inicio; background-color: c.$backgraund;}
+.grid-footer-inicio{grid-area: footer-inicio;} 
+
+/* Productos Grids*/
+.grids-products{
+    display: grid;
+    background-color: c.$backgraund;
+    grid-template-areas:
+        "grid-header-products"
+        "grid-slider-mobile-products"
+        "grid-slider-products"
+        "grid-content-products"
+        "grid-footer-products";
+}
+.grid-header-products{grid-area: grid-header-products;}
+.grid-slider-mobile-products{grid-area:grid-slider-mobile-products}
+.grid-slider-producs{grid-area:grid-slider-products}
+.grid-content-products{grid-area:grid-content-products; background-color: c.$backgraund;}
+.grid-footer-products{grid-area: grid-footer-products;} 
+

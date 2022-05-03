@@ -1,7 +1,6 @@
 @use "../var/vars"as c;
 
 .footer {
-    grid-area: footer;
     height: auto;
     width: 100%;
     background-color: #131313;
@@ -19,10 +18,6 @@
             font-family: geforce;
             font-size: 30px;
             color: c.$colorBlanco;
-
-            .icons__dragon {
-                color: c.$colorNaranja;
-            }
         }
 
         .footer__social {
@@ -33,7 +28,11 @@
             .footer__icon {
                 color: c.$colorBlanco;
                 letter-spacing: 15px;
-                font-size: 25px;
+                font-size: 25px; 
+            }
+            .footer__icon:hover{
+                color: rgb(110, 104, 104);
+                transition: 0.4s;
             }
         }
     }
@@ -197,7 +196,24 @@
 }
   
 @media screen and (min-width: 688px) {
-
+    .footer{
+        .footer__row-1{
+            display: flex;
+            flex-direction: row;
+            
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .footer__li{
+                list-style: none;
+                padding: 10px;
+        
+                .footer__img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
   
 @media screen and (min-width: 769px) {

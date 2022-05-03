@@ -1,0 +1,14 @@
+@use "../../var/vars"as c;
+
+@media  screen and (max-width: 688px) {
+    .slider-products{
+        display: none;
+    }
+}   
+
+
+@media  screen and (min-width: 688px) {
+    .slider-mobile-products{
+        display: none;
+    }
+}
