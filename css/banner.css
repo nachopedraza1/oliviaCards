@@ -1,0 +1,5 @@
+.banner-bg-cover {
+    height: 100%px;
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .9));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#000000", GradientType=0)
+}

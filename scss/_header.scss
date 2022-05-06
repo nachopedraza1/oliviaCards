@@ -6,10 +6,12 @@
 }
 
 .header{
-  background-color: c.$backgraund;
+  background-color: rgba(11, 1, 1, 0.459);
+  backdrop-filter: blur(20px) saturate(180%);
   height: auto;
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   .icons {
     color: c.$colorBlanco;
@@ -39,6 +41,7 @@
   transition: 0.3s;
   height: 100%;
   overflow: auto;
+  
   border-top: 1px solid c.$colorNaranja;
 
   .menu__li {
@@ -64,7 +67,8 @@
 
 @media screen and (min-width: 688px) {
   .header{
-    position: relative;
+    position: fixed;
+    z-index: 1;
 
     .icons {
       .icons__toggle {
