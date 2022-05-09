@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -15,7 +16,7 @@
   <title>ONews</title>
 </head>
 
-<body>
+<body class="scroll-none">
   <div class="grids-tecno">
     <header class="header grid-header-tecno">
       <div class="icons">
@@ -50,9 +51,8 @@
         <p class="text-p text-center f-aldrich">Placas madre para juegos AORUS Z690 de GIGABYTE</p>
         <h1 class="tittle-h1 text-center c-blanco f-aorus">EL NUEVO REY DEL JUEGO</h1>
         <p class="text-p text-center f-aldrich">Más potencia. Más estabilidad.</p>
-        <p class="text-p text-center"><span class="text">Ver Evento </span><i class="fa-solid fa-circle-play"></i><span
-            class="mar-10">|</span>Video
-          General <i class="fa-solid fa-circle-play"></i></p>
+          <button class="btn-v2"><a class="btn__a" href="#tecno">VER MAS <i
+            class="fa-solid fa-circle-arrow-down"></i></a></button>
       </div>
     </section>
 
@@ -64,15 +64,14 @@
         <p class="text-p text-center f-aldrich">Placas madre para juegos AORUS Z690 de GIGABYTE</p>
         <h1 class="tittle-h1 text-center c-blanco f-aorus">EL NUEVO REY DEL JUEGO</h1>
         <p class="text-p text-center f-aldrich">Más potencia. Más estabilidad.</p>
-        <p class="text-p text-center"><span class="hover">Ver Evento <i class="fa-solid fa-circle-play"></i></span><span
-            class="mar-10">|</span><span class="hover">Video
-              General <i class="fa-solid fa-circle-play"></i></span></p>
+              <button class="btn-v2" data-aos="flip-up"><a class="btn__a" href="#tecno">VER MAS <i
+                class="fa-solid fa-circle-arrow-down"></i></a></button>
       </div>
     </section>
 
     <div class="grid-content-tecno">
       <!--Section 1-->
-      <section class="container container--tecno-section1 pad-10-h">
+      <section class="container container--tecno-section1 pad-10-h" data-aos="fade">
         <div class="container container--tecno-section1__col-1">
           <img class="wh-100" src="../img/productos/productos-mothers.jpg" alt="">
         </div>
@@ -84,7 +83,7 @@
         </div>
       </section>
       <!--Section 2-->
-      <section class="container container--tecno-section2 pad-10-h">
+      <section class="container container--tecno-section2 pad-10-h" id="tecno" data-aos="fade-up">
         <div class="container--tecno-section2__col1">
           <video class="pad-15"
             src="https://www.aorus.com/event/motherboards/intel-z690-series/assets/video/Xtreme-Power-1.mp4"
@@ -102,7 +101,7 @@
         </div>
       </section>
       <!--Section 3-->
-      <section class="container container--tecno-section3 pad-10-h">
+      <section class="container container--tecno-section3 pad-10-h" data-aos="fade-right">
         <div class="container--tecno-section3__col1">
           <video class="pad-15"
             src="https://www.aorus.com/event/motherboards/intel-z690-series/assets/video/Xtreme-Power-2.mp4"
@@ -122,7 +121,7 @@
         </div>
       </section>
       <!--Section 4-->
-      <section class="container container--tecno-section4 pad-10-h">
+      <section class="container container--tecno-section4 pad-10-h" data-aos="fade-right">
         <div class="container--tecno-section4__col1">
           <video class="pad-15"
             src="https://www.aorus.com/event/motherboards/intel-z690-series/assets/video/Z690_DDR5-RAM-Performance_1.mp4"
@@ -140,7 +139,7 @@
         </div>
       </section>
       <!--Section 5-->
-      <section class="container container--tecno-section5 pad-10-h">
+      <section class="container container--tecno-section5 pad-10-h" data-aos="fade-right">
         <div class="container--tecno-section5__col1">
           <video class="pad-15"
             src="https://www.aorus.com/event/motherboards/intel-z690-series/assets/video/Thermal-Design-1.mp4"
@@ -158,43 +157,6 @@
             Fins-Array III , lo que garantiza una temperatura VRM 65°C bajo cargas completas y garantiza una plataforma
             más estable para juegos premium, creación de contenido o incluso overclocking extremo.</p>
           <button class="btn-v2"><a class="btn__a" href="#">MAS INFORMACION</a></button>
-        </div>
-      </section>
-      <!--Section 6-->
-      <section class="container container--tecno-section6 pad-10-h">
-        <div class="container--tecno-section6__col1 pad-10">
-          <h1 class="tittle-h1 text-center"><span class="c-aqua">MONITORES GIGABYTE AORUS 4K</span>
-          </h1>
-          <p class="text-p text-center f-titillium">Presentamos los PRIMEROS monitores para juegos 4K de AORUS: FI32U,
-            FV43U y FO48U. Estos modelos cuentan con hasta 4K/120+, HDMI 2.1, Super Speed ​​IPS, HDR 1000, panel OLED y
-            AORUS Space Audio. Todo esto hace que los nuevos monitores AORUS 4K sean la combinación perfecta para su PC
-            de juegos premium o consola de última generación.</p>
-        </div>
-
-        <div class="container--tecno-section6__col2 pad-10">
-          <img class="wh-100" src="../img/productos/monitor3.jpg" alt="">
-          <h2 class="tittle-h2">Imagen nítida</h2>
-          <p class="text-p">Más píxeles, más inmersivo. La nueva línea de monitores para juegos AORUS ahora implementa
-            una resolución 4K, brindando una imagen excepcional y detallada para una experiencia de juego más inmersiva.
-          </p>
-        </div>
-
-        <div class="container--tecno-section6__col3 pad-10">
-          <img class="wh-100" src="../img/productos/monitor2.jpg" alt="">
-          <h2 class="tittle-h2">Lo mejor para juegos</h2>
-          <p class="text-p">Juegos fluidos y limpios. La nueva línea de monitores AORUS 4K se rearma con una frecuencia
-            de actualización de más de 120 Hz y un tiempo de respuesta de 1 ms, lo que promete un juego fluido y sin
-            interrupciones. Para el FI32U, podría esperar un tiempo de respuesta más corto de 0,5 ms, ¡gracias a la
-            avanzada tecnología Super Speed ​​IPS!</p>
-        </div>
-
-        <div class="container--tecno-section6__col4 pad-10">
-          <img class="wh-100" src="../img/productos/monitor1.jpg" alt="">
-          <h2 class="tittle-h2">Diseñado para el futuro</h2>
-          <p class="text-p">Cuanto mayor sea el ancho de banda, más inmersivo será el juego. Estos nuevos monitores
-            AORUS 4K ahora vienen todos equipados con HDMI 2.1. HDMI 2.1 puede proporcionar un enorme ancho de banda de
-            48 Gbps, lo que le permite maximizar su configuración de juego en cualquier PC para juegos o consola de
-            última generación.</p>
         </div>
       </section>
     </div>
@@ -226,6 +188,8 @@
         <button class="footer__up-btn"><a class="up__a" href="#"><i class="fa-solid fa-angle-up"></i></a></button>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({duration: 1000}); </script>
     <script src="../js/scripts.js"></script>
 </body>
 

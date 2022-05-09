@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -15,7 +16,7 @@
   <title>ONews</title>
 </head>
 
-<body>
+<body class="">
   <div class="grids-products">
     <header class="header grid-header-products">
       <div class="icons">
@@ -47,13 +48,12 @@
         <img class="wh-100 banner mar-top-54" src="../img/productos/banner-productos-mobile.jpg" alt="">
       </div>
       <div class="slider-mobile-products__col2">
-        <p class="text-p text-center f-aldrich">Placas madre para juegos AORUS Z690 de GIGABYTE</p>
-        <h1 class="tittle-h1 text-center c-blanco f-aorus">EL NUEVO REY DEL JUEGO</h1>
-        <p class="text-p text-center f-aldrich">Más potencia. Más estabilidad.</p>
-        <p class="text-p text-center"><span class="text">Ver Evento </span><i class="fa-solid fa-circle-play"></i><span
-            class="mar-10">|</span>Video
-          General <i class="fa-solid fa-circle-play"></i></p>
-      </div>
+        <div class="slider-products__col2">
+          <h1 class="tittle-h1 text-center c-blanco f-aorus">GEFORCE RTX 3090 TI SERIES</h1>
+          <p class="text-p text-center f-aldrich">Xtreme professional, Xtreme Cooling.</p>
+          <button class="btn-v2"><a class="btn__a" href="#cards">VER MAS <i
+                class="fa-solid fa-circle-arrow-down"></i></a></button>
+        </div>
     </section>
 
     <section class="slider-products">
@@ -61,101 +61,161 @@
         <img class="wh-100 banner" src="../img/productos/banner-productos-desk.jpg" alt="">
       </div>
       <div class="slider-products__col2">
-        <p class="text-p text-center f-aldrich">Placas madre para juegos AORUS Z690 de GIGABYTE</p>
-        <h1 class="tittle-h1 text-center c-blanco f-aorus">EL NUEVO REY DEL JUEGO</h1>
-        <p class="text-p text-center f-aldrich">Más potencia. Más estabilidad.</p>
-        <p class="text-p text-center"><span class="hover">Ver Evento <i class="fa-solid fa-circle-play"></i></span><span
-            class="mar-10">|</span><span class="hover">Video
-            General <i class="fa-solid fa-circle-play"></i></span></p>
+        <h1 class="tittle-h1 text-center c-blanco f-aorus">GEFORCE RTX 3090 TI SERIES</h1>
+        <p class="text-p text-center f-aldrich">Xtreme professional, Xtreme Cooling.</p>
+        <button class="btn-v2" data-aos="flip-up"><a class="btn__a" href="#cards">VER MAS <i
+              class="fa-solid fa-circle-arrow-down"></i></a></button>
       </div>
     </section>
 
     <div class="grid-content-products">
-      <section class="container container--products-section1 pad-10-h">
+      <section class="container container--products-section1 pad-10-h" data-aos="fade">
         <div class="container--products-section1__col1">
-          <img class="wh-100 pad-20" src="/img/productos/card1.png" alt="">
-          <h1 class="tittle-h1 text-center">RTX 3090 Series</h1>
+          <h1 class="tittle-h1 text-center c-blanco f-aorus">PRESENTAMOS EL ENFRIAMIENTO CUBIERTO POR MAX</h1>
         </div>
         <div class="container--products-section1__col2">
-          <img class="wh-100 pad-20" src="/img/productos/card2.png" alt="">
-          <h1 class="tittle-h1 text-center">RTX 3080 Ti Series</h1>
+          <img class="wh-100" src="/img/productos/notice1.jpg" alt="">
+          <h2 class="tittle-h2 f-aorus c-naranja mar-10">Serie AORUS GeForce RTX 30 | Primera vista</h2>
+          <p class="text-p f-aldrich mar-10">¡Echa un vistazo por primera vez a las nuevas tarjetas gráficas
+            GIGABYTE AORUS GeForce RTX Serie 30, con MAX-Covered Cooling!</p>
         </div>
         <div class="container--products-section1__col3">
-          <img class="wh-100 pad-20" src="/img/productos/card3.png" alt="">
-          <h1 class="tittle-h1 text-center">RTX 3080 Series</h1>
+          <img class="wh-100" src="/img/productos/notice2.jpg" alt="">
+          <h2 class="tittle-h2 f-aorus c-naranja mar-10">Serie AORUS GeForce RTX 30 | Rendimiento termico</h2>
+          <p class="text-p f-aldrich mar-10">Hoy estamos analizando más de cerca el rendimiento térmico de MAX-Covered Cooling
+            en las últimas tarjetas gráficas de la serie AORUS GeForce RTX 30.</p>
         </div>
         <div class="container--products-section1__col4">
-          <img class="wh-100 pad-20" src="/img/productos/card4.png" alt="">
-          <h1 class="tittle-h1 text-center">RTX 3070 Ti Series</h1>
-        </div>
-        <div class="container--products-section1__col5">
-          <img class="wh-100 pad-20" src="/img/productos/card5.png" alt="">
-          <h1 class="tittle-h1 text-center">RTX 3070 Series</h1>
-        </div>
-        <div class="container--products-section1__col6">
-          <img class="wh-100 pad-20" src="/img/productos/card6.png" alt="">
-          <h1 class="tittle-h1 text-center">RTX 3060 Ti Series</h1>
+          <img class="wh-100" src="/img/productos/notice3.jpg" alt="">
+          <h2 class="tittle-h2 f-aorus c-naranja mar-10">3 cosas que debe verificar antes de comprar RTX 30</h2>
+          <p class="text-p f-aldrich mar-10">3 cosas que debe verificar antes de comprar RTX 30</p>
         </div>
       </section>
 
-      <section class="container container--products-section2 pad-10-h">
-        <div class="container--products-section2__col1">
-          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-1.png" alt="">
+      <section class="container container--products-section2 pad-10-h" id="cards">
+        <div class="productos" data-aos="fade-up">
+          <div>
+            <img class="wh-100 pad-20" src="/img/productos/card1.png" alt="">
+            <h1 class="tittle-h1 text-center">RTX 3090 Series</h1>
+          </div>
+          <div>
+            <img class="wh-100 pad-20" src="/img/productos/card2.png" alt="">
+            <h1 class="tittle-h1 text-center">RTX 3080 Ti Series</h1>
+          </div>
+          <div>
+            <img class="wh-100 pad-20" src="/img/productos/card3.png" alt="">
+            <h1 class="tittle-h1 text-center">RTX 3080 Series</h1>
+          </div>
+          <div>
+            <img class="wh-100 pad-20" src="/img/productos/card4.png" alt="">
+            <h1 class="tittle-h1 text-center">RTX 3070 Ti Series</h1>
+          </div>
+          <div>
+            <img class="wh-100 pad-20" src="/img/productos/card5.png" alt="">
+            <h1 class="tittle-h1 text-center">RTX 3070 Series</h1>
+          </div>
+          <div>
+            <img class="wh-100 pad-20" src="/img/productos/card6.png" alt="">
+            <h1 class="tittle-h1 text-center">RTX 3060 Ti Series</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="container container--products-section3 pad-10-h">
+        <div class="container--products-section3__col1 pad-10" data-aos="fade">
+          <h1 class="tittle-h1 text-center"><span class="c-aqua">MONITORES GIGABYTE AORUS 4K</span>
+          </h1>
+          <p class="text-p text-center f-titillium">Presentamos los PRIMEROS monitores para juegos 4K de AORUS: FI32U,
+            FV43U y FO48U. Estos modelos cuentan con hasta 4K/120+, HDMI 2.1, Super Speed ​​IPS, HDR 1000, panel OLED y
+            AORUS Space Audio. Todo esto hace que los nuevos monitores AORUS 4K sean la combinación perfecta para su PC
+            de juegos premium o consola de última generación.</p>
+        </div>
+
+        <div class="container--products-section3__col2 pad-10" data-aos="fade-up">
+          <img class="wh-100" src="../img/productos/monitor3.jpg" alt="">
+          <h2 class="tittle-h2">Imagen nítida</h2>
+          <p class="text-p">Más píxeles, más inmersivo. La nueva línea de monitores para juegos AORUS ahora implementa
+            una resolución 4K, brindando una imagen excepcional y detallada para una experiencia de juego más inmersiva.
+          </p>
+        </div>
+
+        <div class="container--products-section3__col3 pad-10" data-aos="fade-up">
+          <img class="wh-100" src="../img/productos/monitor2.jpg" alt="">
+          <h2 class="tittle-h2">Lo mejor para juegos</h2>
+          <p class="text-p">Juegos fluidos y limpios. La nueva línea de monitores AORUS 4K se rearma con una frecuencia
+            de actualización de más de 120 Hz y un tiempo de respuesta de 1 ms, lo que promete un juego fluido y sin
+            interrupciones. Para el FI32U, podría esperar un tiempo de respuesta más corto de 0,5 ms, ¡gracias a la
+            avanzada tecnología Super Speed ​​IPS!</p>
+        </div>
+
+        <div class="container--products-section3__col4 pad-10" data-aos="fade-up">
+          <img class="wh-100" src="../img/productos/monitor1.jpg" alt="">
+          <h2 class="tittle-h2">Diseñado para el futuro</h2>
+          <p class="text-p">Cuanto mayor sea el ancho de banda, más inmersivo será el juego. Estos nuevos monitores
+            AORUS 4K ahora vienen todos equipados con HDMI 2.1. HDMI 2.1 puede proporcionar un enorme ancho de banda de
+            48 Gbps, lo que le permite maximizar su configuración de juego en cualquier PC para juegos o consola de
+            última generación.</p>
+        </div>
+      </section>
+
+      <section class="container container--products-section4 pad-10-h">
+        <div class="container--products-section4__col1">
+          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-1.png" alt="" data-aos="zoom-in">
           <h1 class="tittle-h1 text-center">FI32U</h1>
           <div class="monitor-icons">
-            <img class="wh-30 pad-20" src="/img/productos/icon-144Hz.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-hdmi.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-IPS.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-144Hz.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-hdmi.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-IPS.svg" alt="">
           </div>
         </div>
 
-        <div class="container--products-section2__col2">
-          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-2.png" alt="">
+        <div class="container--products-section4__col2">
+          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-2.png" alt="" data-aos="zoom-in">
           <h1 class="tittle-h1 text-center">FI32U</h1>
           <div class="monitor-icons">
-            <img class="wh-30 pad-20" src="/img/productos/icon-144Hz.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-hdmi.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-IPS.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-144Hz.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-hdmi.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-OLED.svg" alt="">
           </div>
         </div>
 
-        <div class="container--products-section2__col3">
-          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-3.png" alt="">
+        <div class="container--products-section4__col3">
+          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-3.png" alt="" data-aos="zoom-in">
           <h1 class="tittle-h1 text-center">FI32U</h1>
           <div class="monitor-icons">
-            <img class="wh-30 pad-20" src="/img/productos/icon-144Hz.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-hdmi.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-IPS.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-120Hz.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-hdmi.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-OLED.svg" alt="">
           </div>
         </div>
 
-        <div class="container--products-section2__col4">
-          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-4.png" alt="">
+        <div class="container--products-section4__col4">
+          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-4.png" alt="" data-aos="flip-left">
           <h1 class="tittle-h1 text-center">FI32U</h1>
           <div class="monitor-icons">
-            <img class="wh-30 pad-20" src="/img/productos/icon-144Hz.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-hdmi.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-IPS.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-144Hz.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-hdmi.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-KVM.svg" alt="">
           </div>
         </div>
 
-        <div class="container--products-section2__col5">
-          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-5.png" alt="">
+        <div class="container--products-section4__col5">
+          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-5.png" alt="" data-aos="flip-left"">
           <h1 class="tittle-h1 text-center">FI32U</h1>
           <div class="monitor-icons">
-            <img class="wh-30 pad-20" src="/img/productos/icon-144Hz.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-hdmi.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-IPS.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-144Hz.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-hdmi.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-KVM.svg" alt="">
           </div>
         </div>
 
-        <div class="container--products-section2__col6">
-          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-6.png" alt="">
+        <div class="container--products-section4__col6">
+          <img class="wh-100 pad-20" src="/img/productos/productos-monitor-6.png" alt="" data-aos="flip-left"">
           <h1 class="tittle-h1 text-center">FI32U</h1>
           <div class="monitor-icons">
-            <img class="wh-30 pad-20" src="/img/productos/icon-144Hz.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-hdmi.svg" alt="">
-            <img class="wh-30 pad-20" src="/img/productos/icon-IPS.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-120Hz.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-hdmi.svg" alt="">
+            <img class="wh-20 mar-10" src="/img/productos/icon-IPS.svg" alt="">
           </div>
         </div>
       </section>
@@ -188,6 +248,8 @@
         <button class="footer__up-btn"><a class="up__a" href="#"><i class="fa-solid fa-angle-up"></i></a></button>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({duration: 1000}); </script>
     <script src="../js/scripts.js"></script>
 </body>
 

@@ -1,5 +1,7 @@
 @use "../../var/vars"as c;
-
+.scroll-none{
+    overflow-x: hidden;
+}
 .slider-mobile-tecno{
     display: flex;
     justify-content: center;
@@ -8,7 +10,7 @@
     }
     .slider-mobile-tecno__col2{
         position: absolute;
-        top: 75%; 
+        top: 60%; 
     }
 }
 
@@ -77,30 +79,6 @@
         }
         .container--tecno-section5__col2{
             width: 50%;
-        }
-    }
-    .container--tecno-section6{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        align-items: stretch;
-        .container--tecno-section6__col1{
-            grid-column: 1 / 4;
-            
-           
-        }
-        .container--tecno-section6__col2{
-            grid-column: 1 / 2;
-            
-        }
-        .container--tecno-section6__col3{
-            grid-column: 2 / 3;
-           
-        }
-        .container--tecno-section6__col4{
-            grid-column: 3 / 4;
-            
         }
     }
 }

@@ -625,15 +625,6 @@
   align-items: center;
 }
 
-.banner {
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 /* Texts */
 .tittle-h1 {
   font-family: "Aldrich", sans-serif;
@@ -874,6 +865,15 @@
 
 .c-aqua {
   color: #8fffff;
+}
+
+.banner {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Grids, Flexs*/
@@ -1136,39 +1136,85 @@
 }
 .slider-mobile-products .slider-mobile-products__col2 {
   position: absolute;
-  top: 75%;
-}
-
-.container--products-section1 {
-  background-image: url("/img/productos/backgraundproducts.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  background-attachment: fixed;
-  overflow: hidden;
+  top: 70%;
 }
 
 .container--products-section2 {
+  background-image: url("/img/productos/backgraundproducts.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.productos {
+  max-width: 300px;
+}
+
+.container--products-section4 {
   display: flex;
   flex-direction: column;
   max-width: 500px;
 }
-.container--products-section2 .monitor-icons {
+.container--products-section4 .monitor-icons {
   display: flex;
   justify-content: center;
 }
 
 @media screen and (min-width: 688px) {
-  .container--products-section1 {
+  .productos {
     display: grid;
-    max-width: 1100px;
+    max-width: 100%;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
+    max-width: 1100px;
   }
 
-  .container--products-section2 {
+  .container--products-section1 {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .container--products-section1 .container--products-section1__col1 {
+    grid-column: 1/4;
+  }
+  .container--products-section1 .container--products-section1__col2 {
+    grid-template-columns: 1/2;
+  }
+  .container--products-section1 .container--products-section1__col3 {
+    grid-template-columns: 2/3;
+  }
+  .container--products-section1 .container--products-section1__col4 {
+    grid-template-columns: 3/4;
+  }
+
+  .container--products-section3 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .container--products-section3 .container--products-section3__col1 {
+    grid-column: 1/4;
+  }
+  .container--products-section3 .container--products-section3__col2 {
+    grid-column: 1/2;
+  }
+  .container--products-section3 .container--products-section3__col3 {
+    grid-column: 2/3;
+  }
+  .container--products-section3 .container--products-section3__col4 {
+    grid-column: 3/4;
+  }
+
+  .container--products-section4 {
     display: grid;
     max-width: 1100px;
     grid-template-columns: 30% 30% 30%;
@@ -1196,6 +1242,10 @@
     margin-left: 60%;
   }
 }
+.scroll-none {
+  overflow-x: hidden;
+}
+
 .slider-mobile-tecno {
   display: flex;
   justify-content: center;
@@ -1205,7 +1255,7 @@
 }
 .slider-mobile-tecno .slider-mobile-tecno__col2 {
   position: absolute;
-  top: 75%;
+  top: 60%;
 }
 
 @media screen and (max-width: 768px) {
@@ -1268,26 +1318,6 @@
   }
   .container--tecno-section5 .container--tecno-section5__col2 {
     width: 50%;
-  }
-
-  .container--tecno-section6 {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    align-items: stretch;
-  }
-  .container--tecno-section6 .container--tecno-section6__col1 {
-    grid-column: 1/4;
-  }
-  .container--tecno-section6 .container--tecno-section6__col2 {
-    grid-column: 1/2;
-  }
-  .container--tecno-section6 .container--tecno-section6__col3 {
-    grid-column: 2/3;
-  }
-  .container--tecno-section6 .container--tecno-section6__col4 {
-    grid-column: 3/4;
   }
 }
 @media screen and (min-width: 1200px) {
