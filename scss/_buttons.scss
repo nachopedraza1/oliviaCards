@@ -1,0 +1,24 @@
+.btn {
+    @include btn;
+
+    &:hover {
+    background-color: #ff812d;
+    transition: 0.3s;
+    }
+
+    &__a {
+        text-decoration: none;
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: $colorBlanco;
+    }
+}
+
+
+@media screen and (min-width: 688px) {
+    .btn--right{
+        margin: 20px 15px;
+    }
+}

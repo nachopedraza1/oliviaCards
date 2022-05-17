@@ -1,4 +1,6 @@
-@use "../var/vars"as c;
+@import "../scss/utilities/vars";
+@import "../scss/utilities/mixins";
+@import "../scss/utilities/breakpoints";
 
 * {
   margin: 0;
@@ -14,7 +16,7 @@
   z-index: 1;
 
   .icons {
-    color: c.$colorBlanco;
+    color: $colorBlanco;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -34,7 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: c.$backgraund;
+  background-color: $backgraund;
   position: fixed;
   width: 100%;
   left: 100%;
@@ -42,7 +44,7 @@
   height: 100%;
   overflow: auto;
   
-  border-top: 1px solid c.$colorNaranja;
+  border-top: 1px solid $colorNaranja;
 
   .menu__li {
     list-style: none;
@@ -52,7 +54,7 @@
       text-decoration: none;
       font-family: 'Titillium Web';
       font-size: 1.6em;
-      color: c.$colorBlanco;
+      color: $colorBlanco;
     }
   }
 }
@@ -87,9 +89,9 @@
           text-decoration: none;
           font-family: 'Titillium Web';
           font-size: 0.7em;
-          color: c.$colorBlanco;
+          color: $colorBlanco;
           margin: 10px;
-          background-image: linear-gradient(black, c.$colorNaranja);
+          background-image: linear-gradient(black, $colorNaranja);
           background-position: 0% 100%;
           background-repeat: no-repeat;
           background-size: 0% 2px;

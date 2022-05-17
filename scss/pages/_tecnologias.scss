@@ -1,96 +1,112 @@
-@use "../../var/vars"as c;
-.scroll-none{
-    overflow-x: hidden;
+@import "../utilities/vars";
+@import "../utilities/mixins";
+
+.slider-tecno {
+    @include media-dw(769px) {
+        display: none;
+    }
+
+    @include media-up(769px) {
+        display: flex;
+
+        .slider-tecno__col2 {
+            position: absolute;
+            align-self: center;
+            margin-left: 60%;
+        }
+    }
 }
-.slider-mobile-tecno{
-    display: flex;
-    justify-content: center;
-    .slider-mobile-tecno__col1{
+
+.slider-mobile-tecno {
+    @include media-up(769px) {
+        display: none;
+    }
+
+    &__col-1 {
         width: 100%;
     }
-    .slider-mobile-tecno__col2{
+
+    &__col-2 {
+        @include flex(column, center, center);
         position: absolute;
-        top: 60%; 
+        top: 55%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
     }
 }
 
-@media  screen and (min-width: 688px) {
-
-}
-
-@media  screen and (max-width: 768px) {
-    .slider-tecno{
-        display: none;
-    } 
-}   
-
-@media screen and (min-width: 769px) {
-    .slider-mobile-tecno{
-        display: none;
-    }
-    .slider-tecno{
-        display: flex;
-        .slider-tecno__col2{
-          position: absolute;
-          align-self: center;
-          margin-left: 60%;
-        }
+.tecno-section-1 {
+    @include media-up(992px) {
+        @include container(1100px);
     }
 }
-  
-@media screen and (min-width: 992px) {
-    .container--tecno-section2{
-        display: flex;
-        .container--tecno-section2__col1{
-            width: 50%;
-            
-        }
-        .container--tecno-section2__col2{
-            width: 50%;
-        }
-    }
-    .container--tecno-section3{
-        display: flex;
-        flex-direction: row-reverse;
-        .container--tecno-section3__col1{
-            width: 50%;
-            
-        }
-        .container--tecno-section3__col2{
+
+.tecno-section-2 {
+    @include container(500px);
+
+    @include media-up(992px) {
+        @include container(1100px);
+        @include flex(row, center, center);
+
+        &__col-1 {
             width: 50%;
         }
-    }
-    .container--tecno-section4{
-        display: flex;
-        .container--tecno-section4__col1{
-            width: 50%;
-            
-        }
-        .container--tecno-section4__col2{
-            width: 50%;
-        }
-    }
-    .container--tecno-section5{
-        display: flex;
-        flex-direction: row-reverse;
-        .container--tecno-section5__col1{
-            width: 50%;
-            
-        }
-        .container--tecno-section5__col2{
+
+        &__col-2 {
             width: 50%;
         }
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .slider-tecno{
-        display: flex;
-        .slider-tecno__col2{
-          position: absolute;
-          align-self: center;
-          margin-left: 65%;
+.tecno-section-3 {
+    @include container(500px);
+
+    @include media-up(992px) {
+        @include container(1100px);
+        @include flex(row-reverse, center, center);
+
+        &__col-1 {
+            width: 50%;
+        }
+
+        &__col-2 {
+            width: 50%;
         }
     }
+}
 
+.tecno-section-4 {
+    @include container(500px);
+
+    @include media-up(992px) {
+        @include container(1100px);
+        @include flex(row, center, center);
+
+        &__col-1 {
+            width: 50%;
+        }
+
+        &__col-2 {
+            width: 50%;
+        }
+    }
+}
+
+.tecno-section-5 {
+    @include container(500px);
+
+    @include media-up(992px) {
+        @include container(1100px);
+        @include flex(row-reverse, center, center);
+
+        &__col-1 {
+            width: 50%;
+        }
+
+        &__col-2 {
+            width: 50%;
+        }
+    }
 }

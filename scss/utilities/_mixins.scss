@@ -1,0 +1,43 @@
+@mixin container($max-w) {
+    margin: 0 auto;
+    max-width: $max-w;
+    height: auto;
+  
+}
+
+@mixin flex($direction,$just, $aling) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $just;
+    align-items: $aling;
+}
+
+@mixin grid($colums, $rows, $just, $aling) {
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    justify-content: $just;
+    align-items: $aling;
+}
+
+@mixin media-up($medida) {
+    @media screen and (min-width: ($medida)){
+        @content;
+    }
+}
+
+@mixin media-dw($medida) {
+    @media screen and (max-width: ($medida)){
+        @content;
+    }
+}
+
+@mixin btn {
+    padding: 10px;
+    border: none;
+    background-color: $colorNaranja;
+    margin: 10px auto;
+    display: block;
+    transition: 0.3s;
+    -webkit-clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}

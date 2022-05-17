@@ -1,7 +1,8 @@
-@use "../var/vars"as c;
+@import "../scss/utilities/vars";
+@import "../scss/utilities/mixins";
 
 .slider-mobile {
-    margin-top: 53px;
+    padding-top: 53px;
     width: 100%;
 
     .container-slider-movil {
@@ -55,7 +56,7 @@
 
 .slider-desk {
     height: auto;
-    margin-top: 54px;
+    padding-top: 54px;
 
     .sliderPc {
         overflow: hidden;
