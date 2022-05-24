@@ -1,6 +1,5 @@
 @import "../scss/utilities/vars";
 @import "../scss/utilities/mixins";
-@import "../scss/utilities/breakpoints";
 
 .footer {
     height: auto;
@@ -8,9 +7,20 @@
     background-color: #131313;
     border-top: 1px solid $colorNaranja;
 
-    .footer__row-1 {
-        display: none;
+    .footer__row-1{
+        @include flex(row,center,center);
+        flex-wrap: wrap;
+        width: 100%;
+        .footer__li{
+            list-style: none;
+            padding: 10px;
+
+            .footer__img{
+                @include container(100px);
+            }
+        }
     }
+    
 
     .footer__row-2 {
         text-align: center;
@@ -37,24 +47,6 @@
                 transition: 0.4s;
             }
         }
-    }
-    .footer__up{
-        display: flex;
-        justify-content: end;
-        .footer__up-btn{
-            background-color: $colorNaranja;;
-            border: 1px solid beige;
-            border-radius: 50%;
-            padding: 5px;
-            margin: 0px 10px 10px 0px;
-             .up__a{
-                 text-decoration: none;
-                 color: $colorBlanco;
-                 font-size: 20px;
-                 padding: 5px;
-             }
-         }
-
     }
 }
 
@@ -187,41 +179,4 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $colorBlanco;
-}
-
-@media screen and (min-width: 360px) {
-
-}
-  
-@media screen and (min-width: 480px) {
-
-}
-  
-@media screen and (min-width: 688px) {
-    .footer{
-        .footer__row-1{
-            display: flex;
-            flex-direction: row;
-            
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            .footer__li{
-                list-style: none;
-                padding: 10px;
-        
-                .footer__img{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-  
-@media screen and (min-width: 769px) {
-
-}
-  
-@media screen and (min-width: 992px) {
-
 }

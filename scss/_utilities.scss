@@ -1,19 +1,23 @@
 @import "../scss/utilities/vars";
 @import "../scss/utilities/mixins";
-@import "../scss/utilities/breakpoints";
+
 
 /* Containers */
 
 /* Texts */
 .tittle-h1{font-family: 'Aldrich', sans-serif; font-style: normal; font-size: 1.6em;color: $colorNaranja; text-align: start; margin: 10px 15px; font-weight: normal;}
-.tittle-h2{font-family: 'Aldrich', sans-serif; font-style: normal; font-size: 1.4em;color: $colorBlanco; text-align: start; margin: 10px 15px; font-weight: normal;}
-.text-p{font-size: 1.0em; color: $colorBlanco; font-family: 'Titillium Web'; text-align: left; margin: 5px 15px; font-weight: normal; line-height: 20px;}
+.tittle-h2{@extend .tittle-h1; font-size: 1.4em;color: $colorBlanco;}
+.text-p{font-size: 1.0em; color: $colorBlanco; font-family: 'Titillium Web'; text-align: left; margin: 5px 15px; font-weight: normal; line-height: 20px; text-decoration: none;}
 .text-center{text-align: center;}
+.text-end{text-align: end;}
+.text-start{text-align: start;}
+.text-just{text-align: justify;}
 
 
 /* Medidas */
 .wh-100{width: 100%;}
 .wh-80{width: 80%;}
+.wh-70{width: 70%;}
 .wh-50{width: 50%;}
 .wh-30{width: 30%;}
 .wh-20{width: 20%;}
@@ -35,6 +39,8 @@
 .mar-20{margin: 20px;}
 
 .mar-top-54{margin-top: 54px;}
+.mar-top-30{margin-top: 30px;}
+.mar-top-10{margin: 10px 0px 0px 0px}
 
 .m-left-10{margin-left: 10px;}
 .m-left-15{margin-left: 15px;}
@@ -47,6 +53,7 @@
 /* Fonts*/
 .f-size-1{font-size: 1em;}
 .f-size-2{font-size: 1.5em;}
+.f-size-3{font-size: 2em;}
 
 
 .f-aorus{font-family: aorus;}
@@ -62,8 +69,7 @@
 .c-rojo{color: $colorRojo;}
 .c-verde{color: $colorVerde;}
 .c-gris{color: $colorGris;}
-.c-aqua{color: $colorAqua;}
 
 
 .banner{object-fit: cover; position: relative; width: 100%; height: 100vh; max-width: 100%; max-height: 100%;}
-
+.b-top{border-top: 1px solid rgba(255, 255, 255, .2); margin-top: 20px; padding-top: 15px;}

@@ -1,0 +1,156 @@
+@import "../utilities/mixins";
+@import "../utilities/vars";
+
+.banners-noticias {
+    background-image: url("../../img/productos/banner-notice-desk.jpg");
+    height: 100vh;
+
+    &__desk {
+        display: none;
+
+        @include media-up(992px) {
+            display: flex;
+        }
+    }
+
+    &__mobile {
+        @include media-up(992px) {
+            display: none;
+        }
+    }
+    .banners-noticias__col-2{
+        position: absolute;
+        top: 75%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include media-up(992px){
+            top: 50%;
+            left: 0;
+            right: 50%;
+            bottom: 0;
+        }
+    }
+}
+
+
+.section-notice {
+    @include flex(column, center, center);
+    height: auto;
+    background-image: url("../../img/productos/parallax-notice.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .notice-1 {
+        @include container(480px);
+
+        @include media-up(688px) {
+            @include container(1100px);
+            @include flex(row, center, center);
+
+            &__col-1 {
+                width: 50%
+            }
+
+            &__col-2 {
+                width: 50%
+            }
+        }
+    }
+
+    .notice-2 {
+        @include container(480px);
+
+        @include media-up(688px) {
+            @include container(1100px);
+            @include flex(row-reverse, center, center);
+
+            &__col-1 {
+                width: 50%
+            }
+
+            &__col-2 {
+                width: 50%
+            }
+        }
+    }
+
+    .notice-3 {
+        @include container(480px);
+
+        @include media-up(688px) {
+            @include container(1100px);
+            @include flex(row, center, center);
+
+            &__col-1 {
+                width: 50%
+            }
+
+            &__col-2 {
+                width: 50%
+            }
+        }
+    }
+}
+
+.section-notice-2 {
+    @include flex(column, center, center);
+    @include container(1100px);
+    height: auto;
+
+    @include media-up(688px) {
+        @include grid(30% 30% 30%, auto, center, stretch);
+
+        .tittle {
+            grid-column: 1 / 4;
+        }
+    }
+
+    .notice-box {
+        @include container(480px);
+        background-color: rgba(0, 0, 0, .5);
+        padding: 20px;
+        margin: 10px;
+        transition: 0.5s;
+
+        .container-img {
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: $backgraund;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                transition: .5s;
+            }
+        }
+
+        .box-n {
+            background-color: $colorNaranja;
+            border-radius: 5px;
+            padding: 1px;
+        }
+
+        .box-w {
+            @extend .box-n;
+            padding: 3px 10px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid white;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .5);
+            border: 1px solid #FF6400;
+            box-shadow: 0 0 8px #ff6400;
+            transition: 0.5s;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+            opacity: .8;
+            transition: .5s;
+        }
+    }
+}

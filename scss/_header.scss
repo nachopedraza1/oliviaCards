@@ -1,6 +1,5 @@
 @import "../scss/utilities/vars";
 @import "../scss/utilities/mixins";
-@import "../scss/utilities/breakpoints";
 
 * {
   margin: 0;
@@ -9,33 +8,55 @@
 
 .header{
   background-color: rgba(11, 1, 1, 0.459);
-  backdrop-filter: blur(100%) saturate(180%);
+  backdrop-filter: blur(2px);
   height: auto;
   position: fixed;
   width: 100%;
   z-index: 1;
 
   .icons {
+    @include flex(row,space-between,center);
     color: $colorBlanco;
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
     font-size: 1.6em;
     font-family: geforce;
+    
+    &__toggle {
+      @include media-up(688px){
+        display: none;
+      }
+    }
   }
 
   .main-menu {
     display: none;
+    @include media-up(688px){
+      @include flex(row,center,center);
+      &__li {
+        list-style: none;
+      }
+      &__a {
+        text-decoration: none;
+        font-family: 'Titillium Web';
+        font-size: 0.7em;
+        color: $colorBlanco;
+        margin: 10px;
+        background-image: linear-gradient(black, $colorNaranja);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+      }
+      &__a:hover {
+        background-size: 100% 2px;
+      }
+    }
   }
 }
-.header{
-  
-}
+
 
 .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column,start,center);
   background-color: $backgraund;
   position: fixed;
   width: 100%;
@@ -43,82 +64,21 @@
   transition: 0.3s;
   height: 100%;
   overflow: auto;
-  
   border-top: 1px solid $colorNaranja;
 
-  .menu__li {
+  &__li {
     list-style: none;
     padding: 15px;
-
-    .menu__a {
-      text-decoration: none;
-      font-family: 'Titillium Web';
-      font-size: 1.6em;
-      color: $colorBlanco;
-    }
+  }
+  &__a {
+    text-decoration: none;
+    font-family: 'Titillium Web';
+    font-size: 1.6em;
+    color: $colorBlanco;
   }
 }
 
 .nav-menu_visible {
   left: 0;
-}
-
-@media screen and (min-width: 360px) {}
-
-@media screen and (min-width: 480px) {}
-
-@media screen and (min-width: 688px) {
-  .header{
-    position: fixed;
-    z-index: 1;
-
-    .icons {
-      .icons__toggle {
-        display: none;
-      }
-    }
-
-    .main-menu {
-      display: flex;
-      justify-content: center;
-
-      .main-menu__li {
-        list-style: none;
-
-        .main-menu__a {
-          text-decoration: none;
-          font-family: 'Titillium Web';
-          font-size: 0.7em;
-          color: $colorBlanco;
-          margin: 10px;
-          background-image: linear-gradient(black, $colorNaranja);
-          background-position: 0% 100%;
-          background-repeat: no-repeat;
-          background-size: 0% 2px;
-          transition: background-size .3s;
-        }
-
-        .main-menu__a:hover {
-          background-size: 100% 2px;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .header{
-    .main-menu {
-      .main-menu__li {
-        .main-menu__a {
-         
-
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 992px) {
-
+  height: 100vh;
 }
