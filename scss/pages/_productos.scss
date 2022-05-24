@@ -44,7 +44,7 @@
     @include flex(column, center, center);
 
     @include media-up(688px) {
-        @include container(1100px);
+        @include container(1200px);
         @include grid(32% 32% 32%, auto, space-around, stretch);
 
         &__col-1 {
@@ -75,7 +75,7 @@
         @include container(400px);
 
         @include media-up(688px) {
-            @include container(1100px);
+            @include container(1200px);
             @include grid(30% 30% 30%, auto, center, center);
         }
     }
@@ -86,7 +86,7 @@
     @include flex(column, center, center);
 
     @include media-up(688px) {
-        @include container(1100px);
+        @include container(1200px);
         @include grid(30% 30% 30%, auto, center, stretch);
 
         &__col-1 {
@@ -105,7 +105,7 @@
     }
 
     @include media-up(688px) {
-        @include container(1000px);
+        @include container(1200px);
         @include grid(30% 30% 30%, auto, space-around, stretch);
 
         &__col-1 {
