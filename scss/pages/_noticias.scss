@@ -47,7 +47,7 @@
         @include container(480px);
 
         @include media-up(688px) {
-            @include container(1400px);
+            @include container(1200px);
             @include flex(row, center, center);
 
             &__col-1 {
@@ -64,7 +64,7 @@
         @include container(480px);
 
         @include media-up(688px) {
-            @include container(1400px);
+            @include container(1200px);
             @include flex(row-reverse, center, center);
 
             &__col-1 {
@@ -81,7 +81,7 @@
         @include container(480px);
 
         @include media-up(688px) {
-            @include container(1400px);
+            @include container(1200px);
             @include flex(row, center, center);
 
             &__col-1 {
@@ -97,7 +97,7 @@
 
 .section-notice-2 {
     @include flex(column, center, center);
-    @include container(1400px);
+    @include container(1200px);
     height: auto;
 
     @include media-up(688px) {

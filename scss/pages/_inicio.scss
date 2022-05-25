@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 688px) {
     .inicio-section-2{
-        @include container(1400px);
+        @include container(1200px);
         @include flex(row,center,center);
         &__col-1{
             width: 55%;
@@ -13,7 +13,7 @@
         }
     }
     .inicio-section-3{
-        @include container(1400px);
+        @include container(1200px);
         @include flex(row-reverse,center,center);
         &__col-1{
             width: 55%;
@@ -23,7 +23,7 @@
         }
     } 
     .inicio-section-4{
-        @include container(1400px);
+        @include container(1200px);
         @include flex(row,center,center);
         &__col-1{
             width: 55%;
@@ -33,7 +33,7 @@
         }
     }
     .inicio-section-5{
-        @include container(1400px);
+        @include container(1200px);
         @include grid (50% 50% , auto,center,center);
         &__col-1{
             grid-column: 1 / 3;
