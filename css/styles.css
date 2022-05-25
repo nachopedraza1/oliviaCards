@@ -1092,7 +1092,7 @@
 @media screen and (min-width: 688px) {
   .section-notice .notice-1 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1114,7 +1114,7 @@
 @media screen and (min-width: 688px) {
   .section-notice .notice-2 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
@@ -1136,7 +1136,7 @@
 @media screen and (min-width: 688px) {
   .section-notice .notice-3 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1157,7 +1157,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   height: auto;
   height: auto;
 }
@@ -1217,7 +1217,7 @@
 @media screen and (min-width: 688px) {
   .inicio-section-2 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1233,7 +1233,7 @@
 
   .inicio-section-3 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
@@ -1249,7 +1249,7 @@
 
   .inicio-section-4 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1265,7 +1265,7 @@
 
   .inicio-section-5 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1335,7 +1335,7 @@
 @media screen and (min-width: 688px) {
   .products-section-1 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -1374,7 +1374,7 @@
 @media screen and (min-width: 688px) {
   .products-section-2 .productos {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -1396,7 +1396,7 @@
 @media screen and (min-width: 688px) {
   .products-section-3 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -1427,7 +1427,7 @@
 @media screen and (min-width: 688px) {
   .products-section-4 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -1495,7 +1495,7 @@
 @media screen and (min-width: 992px) {
   .tecno-section-1 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
   }
 }
@@ -1508,7 +1508,7 @@
 @media screen and (min-width: 992px) {
   .tecno-section-2 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1531,7 +1531,7 @@
 @media screen and (min-width: 992px) {
   .tecno-section-3 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
@@ -1554,7 +1554,7 @@
 @media screen and (min-width: 992px) {
   .tecno-section-4 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1577,7 +1577,7 @@
 @media screen and (min-width: 992px) {
   .tecno-section-5 {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
