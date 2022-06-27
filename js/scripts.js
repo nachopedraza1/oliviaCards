@@ -1,9 +1,15 @@
 /* menu mobile */
-const navToggle = document.querySelector(".icons__toggle");
+const navToggle = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
 
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
+});
+
+//menu 
+var hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function() {
+hamburger.classList.toggle("is-active");
 });
 
 /* slider mobile*/
